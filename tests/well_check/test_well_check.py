@@ -134,6 +134,17 @@ class WellCanonicalNameTests(unittest.TestCase):
         )
         self.assertEqual(result["status"], "PASS")
 
+    def test_digit_containing_canonical_name_is_valid(self) -> None:
+        result = receipt(
+            "`q5-first-advance` — This case name is canonical because digits may occur inside lowercase kebab-case names.\n\n"
+            "The qualification uses `q5-first-advance` because exact lookup is required.\n"
+        )
+        self.assertEqual(result["status"], "PASS")
+
+    def test_leading_digit_canonical_name_is_rejected(self) -> None:
+        result = receipt("`5q-first-advance` — This name is malformed because canonical names start with a lowercase letter.\n")
+        self.assertIn("WELL-N001", rules(result))
+
     def test_heading_definition_and_reference_are_checked_without_sentence_rule(self) -> None:
         result = receipt(
             "### `stable-name` — Canonical heading\n\n"

@@ -1,12 +1,22 @@
 # WELL — Warranted, Explicit, Lean, Linked
 
-WELL is a portable standard for making design documents inspectable, locally warranted, explicit, lean, and linked.
+WELL offers **two separate uses**, selected by the document's function rather than its filename.
 
-The normative standard is [`well.md`](well.md). The repository also includes the deterministic mechanical checker, its pinned dependencies, and focused tests.
+| Use | File | Intended documents | Checking |
+| --- | --- | --- | --- |
+| **Formal WELL** | [`well.md`](well.md) | Formal Software Design Descriptions (SDDs), including documents serving that same formal SDD role under another name | Mechanical WELL conformance checker |
+| **WELL Idiom** | [`well-idiom.md`](well-idiom.md) | Skills, `AGENTS.md`, definitions, working-design notes, implementation plans, roadmaps, and other non-SDD working documents | No mechanical checker or formal conformance |
 
-WELL is intentionally independent of any project-specific architecture process, authority chain, review method, implementation workflow, or acceptance gate. Adopting projects decide those separately.
+Formal WELL makes an SDD's propositions warranted, explicit, lean, and linked. Its checker and focused tests are included in this repository. **Discussing design, having a `.md` extension, living under `design/`, or running the checker does not make a document an SDD.**
 
-## Quick start
+WELL Idiom borrows the useful `claim, because reason` writing pattern and meaning-preserving practices without the formal structure, required token, or ceremony of an SDD.
+
+These are distinct scopes, **not two levels of formal WELL compliance**. Neither file depends on project-specific architecture processes, acceptance gates, or private repository conventions.
+
+## Formal SDD checker
+
+Use these commands only when formal WELL conformance is intended; WELL Idiom needs no installation or checker.
+
 
 ```bash
 python3 -m venv well_check/.venv

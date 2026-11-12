@@ -2,15 +2,17 @@
 
 - **Original author:** Saffi Hartal
 
-WELL is the normative profile for architecture, software-design, architecture-decision, and equivalent design documents, because design meaning must remain inspectable and resistant to drift.
+WELL is the normative writing and mechanical-conformance profile for a formal Software Design Description (SDD), including a differently named artifact serving the same formal SDD role, because durable software-design decisions must remain inspectable and resistant to drift.
 
 WELL governs this document, because a design standard must demonstrate that its own requirements are usable.
 
 ## Scope and purpose
 
-WELL applies to documents that define or justify a design, because their propositions must survive implementation, review, extraction, movement, and later modification.
+WELL applies to a formal SDD or an artifact fulfilling the same SDD authority function, because its propositions must survive implementation, review, extraction, movement, and later modification.
 
-WELL does not govern prompts, source code, reviews, reports, status updates, test output, runbooks, user documentation, or ordinary communication, because those artifacts serve different functions and require different forms.
+A document does not enter WELL scope merely by discussing design, residing in a `design/` directory, or undergoing a mechanical checker run, because the writing contract follows the document's formal SDD function rather than its topic or tools.
+
+WELL does not govern standalone architecture descriptions, governing inputs, implementation plans, design roadmaps, working notes, skills, agent instructions, prompts, source code, reviews, reports, status updates, test output, runbooks, user documentation, or ordinary communication, because those non-SDD artifacts serve different functions and require different forms.
 
 Scope follows function rather than filename, because renaming an artifact must not silently extend or remove normative authority.
 

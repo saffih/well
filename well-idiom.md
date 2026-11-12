@@ -1,6 +1,8 @@
 # WELL Idiom
 
-A lightweight writing convention for preserving meaning, reasoning, and intent across changes.
+A lightweight, standalone writing convention for preserving meaning, reasoning, and intent across changes.
+
+Use it in skills, agent instructions such as `AGENTS.md`, definitions, working-design notes, implementation plans, roadmaps, and other non-SDD working documents. It is writing guidance, not a reduced form of formal Software Design Description conformance.
 
 ## Writing form
 
@@ -55,3 +57,5 @@ Headings, fragments, examples, and straightforward statements need no artificial
 A stated reason makes intent inspectable; it does not establish that the reasoning is correct.
 
 No mandatory document sections, canonical identifiers, external references, mechanical checking, or formal conformance are required.
+
+Discussing design does not by itself make a working document a formal SDD.

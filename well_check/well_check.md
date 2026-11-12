@@ -1,6 +1,6 @@
 # WELL mechanical checker
 
-`well_check/well_check.py` is the project's single standard entry point for deterministic mechanical checking of a WELL-governed Markdown design document.
+`well_check/well_check.py` is the project's single standard entry point for deterministic mechanical checking of a WELL-governed formal Software Design Description (SDD), including an artifact serving that same formal SDD role under another filename. Running the checker on a non-SDD document does not make that document WELL-governed.
 
 ## Runtime requirement
 
